@@ -1,0 +1,10 @@
+{
+    "EmpName" : "John Doe",
+    "DOB" : "1990-01-01",
+    "EmpID" : "EMP12345",
+    "Department" : "Engineering",
+    "Position" : "Senior Software Engineer",
+    "Salary" : "95000",
+    "JoinDate" : "2020-06-15",
+    "Manager" : "Jane Smith"
+}
