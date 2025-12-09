@@ -2,20 +2,13 @@ import json
 from docxtpl import DocxTemplate
 
 def process_file(input_filename, output_filename=None):
-    # Read the details.json file
     with open('details.json', 'r') as f:
         context = json.load(f)
     
-    # Load the Word document template
-    doc = DocxTemplate(input_filename)
+    doc = DocxTemplate(input_filename) 
     
-    print(f"Template variables available: {list(context.keys())}")
-    
-    # Render the template with context
-    # Supports Jinja2 syntax including loops for tables
     doc.render(context)
     
-    # Write to output file
     if output_filename is None:
         output_filename = input_filename.replace('.docx', '_output.docx')
     
